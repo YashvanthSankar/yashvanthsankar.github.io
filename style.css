@@ -14,7 +14,12 @@
   color: rgb(255, 31, 31);
   background: linear-gradient(to right, rgb(150, 183, 255), rgb(202, 122, 255));
   padding: 4px 6px;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
   border: none;
   border-radius: 3px;
+}
+
+.nm-intro span:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
 }
