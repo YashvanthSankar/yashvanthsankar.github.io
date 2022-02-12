@@ -4,29 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <title>Devfutr | yashvanthsankar.github.io</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <nav class="navbar">
     <div class="logo">
-      <a href="/"><h1 class="text-2xl ">Devfutr</h1></a>
+      <a href="/"><h1 class="devfutr">Devfutr</h1></a>
     </div>
 
-    <ul>
-      <li class="nbtnli"><a href="/index.html">Home</a></li>
+    <button class="hamburger" id="hamburger">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <ul id="nav-ul" class="nav-ul">
+      <li class="nbtnli"><a href="/">Home</a></li>
       <li class="nbtnli"><a href="#projects">Projects</a></li>
-      <li class="nbtnli"><a href="/about.html">About</a></li>
+      <li class="nbtnli"><a href="#about">About</a></li>
       <div class="contactli">
         <li class="btn-contact"><a href="mailto:yashvanthsankar@gmail.com">Contact</a></li>
       </div>
     </ul>
   </nav>
-  <h1 class="nm-intro text-3xl font-bold  p-5 text-center ">
+  <h1 class="nm-intro">
     Hello there, My name is <a href="/"><span>Yashvanth</span></a>!!! 👋
   </h1>
 
-  <h1 class=" com-soon text-6xl font-bold text-center center">
+  <h1 class=" com-soon">
       Coming soon!
   </h1>
 </body>

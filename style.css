@@ -5,15 +5,27 @@
   font-family: "Cubano", sans-serif;
 }
 
+.logo {
+  color: #052a4e;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 body {
   background-color: #d8eafd;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 8vh;
+  padding: 15px;
 }
 
 .navbar ul {
@@ -21,7 +33,7 @@ body {
 }
 
 .nbtnli {
-  margin: 3px 20px;
+  margin: 5px 20px;
   color: rgb(253, 85, 85);
 }
 
@@ -32,6 +44,15 @@ body {
 
 .contactli {
   padding: 0 24px;
+}
+
+.hamburger {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  color: rgb(253, 85, 85);
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .btn-contact {
@@ -46,24 +67,24 @@ body {
   color: #052a4e;
 }
 
-.logo {
-  color: #052a4e;
-  letter-spacing: 5px;
-  font-weight: bold;
-  padding: 3px 20px;
-  border: none;
-  border-radius: 3px;
-}
-
 .com-soon {
   color: rgb(255, 85, 85);
   justify-content: center;
   align-items: center;
   padding: 20px;
+  text-align: center;
+  font-size: 4.5rem;
+  line-height: 1;
+  font-weight: bold;
 }
 
 .nm-intro {
   color: #052a4e;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: bold;
+  padding: 30px 10px;
+  text-align: center;
 }
 
 .nm-intro span {
@@ -80,4 +101,14 @@ body {
   color: #052a4e;
   background-color: rgb(255, 85, 85);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
