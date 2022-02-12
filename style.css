@@ -5,12 +5,15 @@
   font-family: "Cubano", sans-serif;
 }
 
+body {
+  background-color: #d8eafd;
+}
+
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgba(155, 155, 155, 0.5);
 }
 
 .navbar ul {
@@ -19,11 +22,11 @@
 
 .nbtnli {
   margin: 3px 20px;
-  color: rgb(253, 31, 31);
+  color: rgb(253, 85, 85);
 }
 
 .nbtnli:hover {
-  background-color: #333;
+  background-color: #052a4e;
   border-radius: 3px;
 }
 
@@ -32,19 +35,19 @@
 }
 
 .btn-contact {
-  color: rgb(253, 31, 31);
-  background-color: #333;
+  color: rgb(253, 85, 85);
+  background-color: #052a4e;
   padding: 3px 10px;
   border-radius: 40px;
 }
 
 .btn-contact:hover {
-  background-color: rgb(253, 31, 31);
-  color: #333;
+  background-color: rgb(253, 85, 85);
+  color: #052a4e;
 }
 
 .logo {
-  color: #333;
+  color: #052a4e;
   letter-spacing: 5px;
   font-weight: bold;
   padding: 3px 20px;
@@ -53,19 +56,19 @@
 }
 
 .com-soon {
-  color: rgb(255, 31, 31);
+  color: rgb(255, 85, 85);
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
 .nm-intro {
-  color: #333;
+  color: #052a4e;
 }
 
 .nm-intro span {
-  color: rgb(255, 31, 31);
-  background-color: #40d0e0;
+  color: rgb(255, 85, 85);
+  background-color: #052a4e;
   padding: 4px 6px;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
   border: none;
@@ -74,7 +77,7 @@
 
 .nm-intro span:hover {
   cursor: pointer;
-  color: #40d0e0;
-  background-color: rgb(253, 31, 31);
+  color: #052a4e;
+  background-color: rgb(255, 85, 85);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
 }
