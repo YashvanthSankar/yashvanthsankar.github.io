@@ -1,4 +1,7 @@
-@import url("http://fonts.cdnfonts.com/css/cubano");
+@font-face {
+  font-family: Cubano;
+  src: url(Fonts/Cubano.ttf);
+}
 
 * {
   padding: 0;
