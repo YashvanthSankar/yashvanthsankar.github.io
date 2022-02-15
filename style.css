@@ -6,6 +6,7 @@
 * {
   padding: 0;
   margin: 0;
+  list-style: none;
   box-sizing: border-box;
   font-family: "Cubano", sans-serif;
 }
@@ -26,8 +27,9 @@ body {
   font-family: "Cubano", sans-serif;
 }
 
-.navbar {
+nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   min-height: 8vh;
@@ -38,18 +40,14 @@ body {
   display: flex;
 }
 
-.nav-link {
+.nav-menu li a {
   margin: 5px 20px;
   color: rgb(253, 85, 85);
 }
 
-.nav-link:hover {
+.nav-menu li a:hover {
   background-color: #052a4e;
   border-radius: 3px;
-}
-
-.contact-link {
-  padding: 0 24px;
 }
 
 .hamburger {
@@ -61,39 +59,17 @@ body {
   font-size: 20px;
 }
 
-.btn-contact {
-  color: rgb(253, 85, 85);
-  background-color: #052a4e;
-  padding: 3px 10px;
-  border-radius: 3px;
-}
 
-.btn-contact:hover {
-  background-color: rgb(253, 85, 85);
-  color: #052a4e;
-}
-
-.com-soon {
-  color: rgb(255, 85, 85);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  text-align: center;
-  font-size: 4.5rem;
-  line-height: 1;
-  font-weight: bold;
-}
-
-.nm-intro {
+.intro {
   color: #052a4e;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: bold;
-  padding: 30px 10px;
+  padding: 75px 10px;
   text-align: center;
 }
 
-.nm-intro span {
+.intro span {
   color: rgb(255, 85, 85);
   background-color: #052a4e;
   padding: 4px 6px;
@@ -102,7 +78,7 @@ body {
   border-radius: 3px;
 }
 
-.nm-intro span:hover {
+.intro span:hover {
   cursor: pointer;
   color: #052a4e;
   background-color: rgb(255, 85, 85);
@@ -112,9 +88,15 @@ body {
 @media screen and (max-width: 768px) {
   .nav-menu {
     display: none;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .nav-menu.show {
+    display: flex;
   }
 
   .hamburger {
     display: block;
-  }
 }
