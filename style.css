@@ -124,11 +124,13 @@ html, body {
 
 .intro {
   color: var(--dark-blue);
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 3rem;
+  line-height: 5rem;
   font-weight: bold;
-  padding: 75px 10px;
+  padding: 45px 10px;
   text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .intro span {
@@ -145,6 +147,14 @@ html, body {
   color: var(--dark-blue);
   background-color: var(--pinkish-red);
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.24);
+}
+
+/* Intro-section */
+.intro-section {
+  background-color: #df5252;
+  text-align: center;
+  padding: 20px 0;
+  margin: 30px 10px;
 }
 
 .hamburger {
@@ -228,6 +238,11 @@ html, body {
 }
 
 @media screen and (max-width: 768px) {
+  .intro {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
   .hamburger {
     display: block;
   }
