@@ -1,3 +1,5 @@
-function show() {
-  document.getElementById("nav-menu").classList.toggle("show");
+function navToggle(element) {
+  element.classList.toggle("open");
+
+  document.getElementById("menu").classList.toggle("hidden");
 }
