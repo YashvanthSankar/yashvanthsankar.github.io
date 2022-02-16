@@ -93,6 +93,10 @@ nav {
     flex-direction: column;
   }
 
+  .nav-menu li {
+    margin: 25px;
+  }
+
   .nav-menu.show {
     display: flex;
   }
