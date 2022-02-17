@@ -7,6 +7,8 @@
   --light-blue: #d8eafd;
   --dark-blue: #052a4e;
   --pinkish-red: #fd5555;
+  --blue-medium: #7fb4ee;
+  --dark-pinkish-red: #df5252;
 }
 
 * {
@@ -20,7 +22,7 @@
 
 .logo {
   text-decoration: none;
-  color: #052a4e;
+  color: var(--dark-blue);
   letter-spacing: 5px;
   font-weight: bold;
   padding: 5px 20px;
@@ -92,6 +94,14 @@ html, body {
   color: var(--dark-blue);
 }
 
+section:nth-child(odd) {
+  background-color: var(--dark-pinkish-red);
+}
+
+section:nth-child(even) {
+  background-color: var(--blue-medium);
+}
+
 .contact-mob {
   cursor: pointer;
   display: inline-block;
@@ -151,12 +161,50 @@ html, body {
 
 /* Intro-section */
 .intro-section {
-  background-color: #df5252;
   text-align: center;
   padding: 20px 0;
   margin: 30px 10px;
+  border-radius: 5px;
 }
 
+/* Cloud Hosting Website */
+.cloud-website {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  text-align: center;
+  margin: 30px 10px;
+  border-radius: 5px;
+}
+
+.cloud-website img {
+  height: 300px;
+  width: 750px;
+  object-fit: cover;
+}
+
+.cloud-container {
+  margin: 3px auto;
+  max-width: 800px;
+}
+
+.cloud-website p {
+  color: var(--light-blue);
+}
+
+.cloud-website a {
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.cloud-website a:hover {
+  color: var(--pinkish-red);
+}
+
+.cloud-website h1 {
+  padding: 20px 10px;
+}
+
+/* Hamburger */
 .hamburger {
   cursor: pointer;
   width: 24px;
@@ -204,11 +252,11 @@ html, body {
 
 /* Mobile Menu */
 .mobile-menu {
+  text-decoration: none;
   position: fixed;
   top: 87px;
   right: 0;
   background-color: var(--dark-blue);
-  color: var(--light-blue);
   width: 80%;
   height: 100%;
   padding: 30px;
@@ -219,12 +267,18 @@ html, body {
 
 .mobile-menu ul {
   line-height: 3;
-  border-bottom: var(--light-blue) 1px solid ;
+  border-bottom: var(--blue-medium) 1px solid ;
   padding-bottom: 10px;
   margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.mobile-menu li a {
+  text-decoration: none;
 }
 
 .mobile-menu a {
+  color: var(--blue-medium);
   text-decoration: none;
   font-size: 20px;
 }
@@ -241,6 +295,11 @@ html, body {
   .intro {
     font-size: 2rem;
     line-height: 3rem;
+  }
+  .cloud-website img {
+    height: 275px;
+    width: 600px;
+    object-fit: cover;
   }
 
   .hamburger {
