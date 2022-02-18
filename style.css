@@ -21,11 +21,11 @@
 }
 
 .logo {
+  margin: 0 20px;
   text-decoration: none;
   color: var(--dark-blue);
   letter-spacing: 5px;
   font-weight: bold;
-  padding: 5px 20px;
   border: none;
   border-radius: 3px;
   font-size: 1.875rem;
@@ -58,6 +58,7 @@ html, body {
 }
 
 .navbar {
+  background-color: var(--light-blue);
   width: 100%;
   height: auto;
   align-items: center;
@@ -167,8 +168,8 @@ section:nth-child(even) {
   border-radius: 5px;
 }
 
-/* Cloud Hosting Website */
-.cloud-website {
+/* Projects */
+.project-section {
   display: grid;
   grid-template-columns: 60% 40%;
   text-align: center;
@@ -176,32 +177,36 @@ section:nth-child(even) {
   border-radius: 5px;
 }
 
-.cloud-website img {
+.project-section img {
   height: 300px;
   width: 750px;
   object-fit: cover;
 }
 
-.cloud-container {
-  margin: 3px auto;
+.project-container {
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10px;
   max-width: 800px;
 }
 
-.cloud-website p {
+.project-section p {
+  font-size: 25px;
   color: var(--light-blue);
 }
 
-.cloud-website a {
+.project-section a {
   text-decoration: none;
   color: var(--dark-blue);
 }
 
-.cloud-website a:hover {
+.project-section a:hover {
   color: var(--pinkish-red);
 }
 
-.cloud-website h1 {
+.project-section h1 {
   padding: 20px 10px;
+  font-size: 2rem;
 }
 
 /* Hamburger */
@@ -254,7 +259,7 @@ section:nth-child(even) {
 .mobile-menu {
   text-decoration: none;
   position: fixed;
-  top: 87px;
+  top: 76px;
   right: 0;
   background-color: var(--dark-blue);
   width: 80%;
@@ -296,7 +301,12 @@ section:nth-child(even) {
     font-size: 2rem;
     line-height: 3rem;
   }
-  .cloud-website img {
+  .project-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-section img {
     height: 275px;
     width: 600px;
     object-fit: cover;
