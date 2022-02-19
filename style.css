@@ -24,12 +24,21 @@
   margin: 0 20px;
   text-decoration: none;
   color: var(--dark-blue);
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   font-weight: bold;
   border: none;
   border-radius: 3px;
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.logo-container {
+  display: flex;
+}
+
+.logo-container img {
+  height: 40px;
+  width: 40px;
 }
 
 a { text-decoration: none; }
