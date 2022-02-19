@@ -3,6 +3,11 @@
   src: url(Fonts/Cubano/Cubano.ttf);
 }
 
+@font-face {
+  font-family: Euclid;
+  src: url(Fonts/Euclid/Euclid\ Circular\ A\ Medium.ttf);
+}
+
 :root {
   --light-blue: #d8eafd;
   --dark-blue: #052a4e;
@@ -354,6 +359,36 @@ section:nth-child(even) {
 
 .hidden {
   transform: translateX(100%);
+}
+
+/* Footer */
+footer {
+  align-items: center;
+  text-align: center;
+  color: var(--pinkish-red);
+  background-color: var(--light-blue);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+
+footer h2 {
+  padding: 20px 10px;
+}
+
+footer a {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--dark-blue);
+}
+
+.footer-made-with {
+  font-family: 'Euclid', sans-serif;
+  color: var(--dark-blue);
+}
+
+.footer-made-with span {
+  font-family: 'Euclid', sans-serif;
+  color: var(--pinkish-red);
 }
 
 @media screen and (max-width: 768px) {
