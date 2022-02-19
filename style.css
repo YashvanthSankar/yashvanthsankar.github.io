@@ -20,6 +20,10 @@
   font-family: "Cubano", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .logo {
   margin: 0 20px;
   text-decoration: none;
