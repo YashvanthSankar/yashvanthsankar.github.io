@@ -70,6 +70,7 @@ html, body {
   line-height: 1.4;
 }
 
+/* Navbar */
 .navbar {
   position: fixed;
   z-index: 10;
@@ -194,12 +195,14 @@ section:nth-child(even) {
   text-align: center;
   margin: 30px 10px;
   border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 .project-section img {
   height: 300px;
   width: 750px;
   object-fit: cover;
+  border: 1px solid var(--light-blue);
 }
 
 .project-container {
@@ -231,6 +234,40 @@ section:nth-child(even) {
 .github-p {
   padding: 20px 10px;
 }
+
+/* Scroll to top button */
+.scroll-top-btn {
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-blue);
+  color: var(--pinkish-red);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-top-btn.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.scroll-top-btn:hover {
+  background-color: var(--pinkish-red);
+  color: var(--dark-blue);
+}
+
 
 /* Hamburger */
 .hamburger {
