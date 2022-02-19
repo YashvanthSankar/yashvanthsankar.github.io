@@ -209,6 +209,10 @@ section:nth-child(even) {
   font-size: 2rem;
 }
 
+.github-p {
+  padding: 20px 10px;
+}
+
 /* Hamburger */
 .hamburger {
   cursor: pointer;
