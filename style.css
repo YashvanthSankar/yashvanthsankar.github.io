@@ -199,7 +199,8 @@ section:nth-child(even) {
   height: 300px;
   width: 750px;
   object-fit: cover;
-  border: 1px solid var(--light-blue);
+  border: 5px solid var(--light-blue);
+  border-radius: 3px;
 }
 
 .project-container {
