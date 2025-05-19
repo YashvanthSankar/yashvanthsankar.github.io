@@ -177,18 +177,24 @@ section:nth-child(even) {
 /* Intro-section */
 .intro-section {
   text-align: center;
-  padding: 20px 0;
-  margin: 30px 10px;
+  padding: 15px 2%;
+  margin: 20px 2.5%;
   margin-top: 100px;
   border-radius: 5px;
 }
 
 /* Projects */
 .project-section {
-  display: grid;
-  grid-template-columns: 60% 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
   text-align: center;
-  margin: 30px 10px;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  max-width: 95%;
+  margin: 20px auto;
+  padding: 2rem;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
@@ -202,12 +208,14 @@ section:nth-child(even) {
 }
 
 .project-container {
-  align-items: center;
-  justify-content: center;
   margin: 5px 10px;
   max-width: 800px;
 }
 
+.project-text{
+  justify-content: center;
+  align-items: center;
+}
 .project-section p {
   font-size: 25px;
   color: var(--light-blue);
@@ -218,7 +226,11 @@ section:nth-child(even) {
   color: var(--dark-blue);
 }
 
-.project-section a:hover {
+.project-section:nth-of-type(even) a:hover {
+  color: var(--blue-medium);
+}
+
+.project-section:nth-of-type(odd) a:hover {
   color: var(--pinkish-red);
 }
 
