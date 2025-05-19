@@ -148,16 +148,16 @@ section:nth-child(even) {
 
 .intro {
   color: var(--dark-blue);
-  font-size: 3rem;
-  line-height: 5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 800;
   padding: 45px 10px;
   text-align: center;
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 1200px;
 }
 
-.intro span {
+.intro a {
   color: var(--pinkish-red);
   background-color: var(--dark-blue);
   padding: 4px 6px;
@@ -166,7 +166,7 @@ section:nth-child(even) {
   border-radius: 3px;
 }
 
-.intro span:hover {
+.intro a:hover {
   cursor: pointer;
   color: var(--dark-blue);
   background-color: var(--pinkish-red);
@@ -382,8 +382,8 @@ footer a {
 
 @media screen and (max-width: 768px) {
   .intro {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
   }
   .project-section {
     display: flex;
