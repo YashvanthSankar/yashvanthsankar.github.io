@@ -157,16 +157,17 @@ section:nth-child(even) {
   max-width: 1200px;
 }
 
-.intro a {
+.intro span {
   color: var(--pinkish-red);
+  text-decoration: none;
   background-color: var(--dark-blue);
-  padding: 4px 6px;
+  padding: 0px 6px;
   box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
   border: none;
   border-radius: 3px;
 }
 
-.intro a:hover {
+.intro span:hover {
   cursor: pointer;
   color: var(--dark-blue);
   background-color: var(--pinkish-red);
