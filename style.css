@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
+ @font-face { font-family: Cubano; src: url('Cubano.ttf'); }
 :root {
   --light-blue: #d8eafd;
   --dark-blue: #052a4e;
@@ -34,9 +33,15 @@ html {
   display: flex;
 }
 
-.logo-container img {
-  height: 40px;
-  width: 181.6px;
+.logo-container a {
+  text-decoration: done;
+  font-family: Cubano,sans-serif;
+  font-size: 1.9em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  color: var(--dark-blue);
+  text-shadow: var(--dark-pinkish-red) 1.5px 1.5px;
 }
 
 a { text-decoration: none; }
@@ -60,7 +65,6 @@ img {
 
 html, body {
   background-color: var(--light-blue);
-  font-family: "Cubano", sans-serif;
   line-height: 1.4;
 }
 
@@ -108,7 +112,7 @@ html, body {
   color: var(--dark-blue);
 }
 
-section:nth-child(odd) {
+section:nth-child(odd)  {
   background-color: var(--dark-pinkish-red);
 }
 
@@ -184,6 +188,12 @@ section:nth-child(even) {
 }
 
 /* Projects */
+.project-header{
+  color: var(--pinkish-red);
+  text-align: center;
+  font-weight: 800;
+  padding: 5px 10px;
+}
 .project-section {
   display: flex;
   flex-direction: row;
@@ -200,8 +210,6 @@ section:nth-child(even) {
 }
 
 .project-section img {
-  height: 300px;
-  width: 750px;
   object-fit: cover;
   border: 5px solid var(--light-blue);
   border-radius: 3px;
@@ -216,8 +224,10 @@ section:nth-child(even) {
   justify-content: center;
   align-items: center;
 }
+
 .project-section p {
-  font-size: 25px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: var(--light-blue);
 }
 
@@ -226,11 +236,11 @@ section:nth-child(even) {
   color: var(--dark-blue);
 }
 
-.project-section:nth-of-type(even) a:hover {
+.project-section:nth-of-type(odd) a:hover {
   color: var(--blue-medium);
 }
 
-.project-section:nth-of-type(odd) a:hover {
+.project-section:nth-of-type(even) a:hover {
   color: var(--pinkish-red);
 }
 
@@ -367,11 +377,14 @@ section:nth-child(even) {
 /* Footer */
 footer {
   align-items: center;
+  padding: 5px;
   text-align: center;
   color: var(--pinkish-red);
   background-color: var(--light-blue);
-  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
-    0 0 2px rgb(0 0 0 / 7%);
+  box-shadow: 
+  1px 1px 3px rgba(0, 0, 0, 0.1),    /* Soft base shadow (bottom-right) */
+  0 2px 2px rgba(0, 0, 0, 0.06),      /* Vertical spread for depth */
+  0 0 2px rgba(0, 0, 0, 0.07);        /* Subtle outline for definition */
 }
 
 footer h2 {
@@ -408,6 +421,11 @@ footer a {
     width: 600px;
     object-fit: cover;
   }
+
+  .project-section p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    }
 
   .hamburger {
     display: block;
