@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
  @font-face { font-family: Cubano; src: url('Cubano.ttf'); }
 :root {
   --light-blue: #d8eafd;
@@ -14,7 +14,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Bricolage Grotesque", sans-serif;
 }
 
 html {
@@ -35,7 +35,7 @@ html {
 
 .logo-container a {
   text-decoration: done;
-  font-family: Cubano,sans-serif;
+  font-family: Cubano,"Bricolage Grotesque",sans-serif;
   font-size: 1.9em;
   font-weight: 400;
   font-style: normal;
@@ -154,7 +154,7 @@ section:nth-child(even) {
   color: var(--dark-blue);
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 800;
+  font-weight: 600;
   padding: 45px 10px;
   text-align: center;
   margin: 0 auto;
@@ -193,6 +193,9 @@ section:nth-child(even) {
   text-align: center;
   font-weight: 800;
   padding: 5px 10px;
+}
+#project-header{
+  scroll-margin-top: 3em;
 }
 .project-section {
   display: flex;
