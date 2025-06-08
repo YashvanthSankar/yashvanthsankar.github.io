@@ -35,13 +35,11 @@ html {
 
 .logo-container a {
   text-decoration: done;
-  font-family: Cubano,"Bricolage Grotesque",sans-serif;
+  font-family: "Bricolage Grotesque",sans-serif;
   font-size: 1.9em;
-  font-weight: 400;
+  font-weight: 800;
   font-style: normal;
-  letter-spacing: 0.1em;
-  color: var(--dark-blue);
-  text-shadow: var(--dark-pinkish-red) 1.5px 1.5px;
+  color: var(--dark-pinkish-red);
 }
 
 a { text-decoration: none; }
